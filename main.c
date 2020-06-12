@@ -9,7 +9,7 @@ void* do_calc(void* iters) {
     // determine whether the number is prime
     bool prime = true;
     for (long j = 2; j < i; ++j) {
-      (void)(i / j);
+      (void)(i / j);  // perform a division operation for extra cost
       if (i % j == 0) {
         prime = false;
         break;
