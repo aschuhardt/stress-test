@@ -1,3 +1,3 @@
 #!/bin/sh
 
-./build.sh && ./stress-test $(grep -c ^processor /proc/cpuinfo) 10000000
+./build.sh && ./stress-test $(nproc) 10000000
